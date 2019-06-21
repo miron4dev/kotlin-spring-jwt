@@ -1,18 +1,16 @@
-<h1>Spring Stateless Authentication</h1>
-
 <p>
 The application invokes Facebook OAuth2 Auth Server and generates JWT token to be passed on FE layer.
 </p>
 
-<h4>Stack</h4>
+### Tech Stack
 
 - Kotlin
 - Spring Boot
 - JJWT
 
-<h4>To Build and Run</h4>
+### How to Build
 
-- Change application.yml:
+1) Change application.yml:
 
 ```
 facebook:
@@ -23,4 +21,7 @@ jwt.token:
   issuer: changeme
   signing.key: changeme  
 ```
-- Deploy using `./gradlew bootRun` command
+2) Execute `./gradlew clean build` command
+
+### How to Run
+Execute `./gradlew bootRun` command
